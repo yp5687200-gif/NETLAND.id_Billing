@@ -1,0 +1,8 @@
+
+body{font-family:system-ui;background:#0f172a;color:#fff;max-width:1000px;margin:auto;padding:20px}
+.card{background:#1e293b;padding:18px;border-radius:16px;margin:12px 0}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}
+input,select,button{width:100%;padding:12px;margin-top:8px;border-radius:10px;border:none}
+button{cursor:pointer}
+.row{display:flex;justify-content:space-between;padding:10px;border-bottom:1px solid #334155}
+a{color:#7dd3fc}

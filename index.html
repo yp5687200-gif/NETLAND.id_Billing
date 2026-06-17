@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NETLAND.id Billing Pro v2</title>
+<link rel="stylesheet" href="style.css">
+</head><body>
+<h1>NETLAND.id Billing Pro v2</h1>
+
+<div class="stats">
+<div class="card"><h3>Total Pelanggan</h3><span id="total">0</span></div>
+<div class="card"><h3>Pendapatan</h3><span id="income">Rp 0</span></div>
+</div>
+
+<div class="card">
+<h2>Tambah Pelanggan</h2>
+<input id="nama" placeholder="Nama pelanggan">
+<select id="paket">
+<option value="135000">Basic - Up To 30 Mbps - Rp135.000</option>
+<option value="165000">Family - Up To 50 Mbps - Rp165.000</option>
+</select>
+<button onclick="addCustomer()">Simpan</button>
+</div>
+
+<div class="card">
+<h2>Daftar Pelanggan</h2>
+<div id="list"></div>
+</div>
+
+<script src="app.js"></script>
+</body></html>
