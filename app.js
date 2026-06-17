@@ -30,3 +30,60 @@ function render(){
  document.getElementById('income').textContent='Rp '+income.toLocaleString('id-ID');
 }
 render();
+
+function renderCustomer(){
+
+const tbody =
+document.getElementById(
+"customerTable"
+);
+
+const search =
+document.getElementById(
+"search"
+).value.toLowerCase();
+
+tbody.innerHTML="";
+
+customers
+.filter(c =>
+c.nama
+.toLowerCase()
+.includes(search)
+)
+
+.forEach(c=>{
+
+tbody.innerHTML += `
+<tr>
+
+<td>${c.id}</td>
+
+<td>${c.nama}</td>
+
+<td>${c.wa}</td>
+
+<td>${c.paket}</td>
+
+<td>
+${customerStatus(c.dueDate)}
+</td>
+
+<td>
+
+<button
+onclick="sendWA('${c.nama}')">
+WA
+</button>
+
+</td>
+
+</tr>
+`;
+
+});
+
+updateDashboard();
+}
+
+renderCustomer();
